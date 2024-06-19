@@ -18,7 +18,7 @@ if user_id =="lucia" and user_password == '1234':
     #sel_options랑  순서가 맞아야 함
     sel_index = sel_options.index(user_opt)
     img_file = image_files[sel_index]
-    img_local = Image.open(f"img/{img_file}")     
+    img_local = Image.open(f"{img_file}")     
     st.image(img_local, caption=user_opt)
 
 
